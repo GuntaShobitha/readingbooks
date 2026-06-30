@@ -1,94 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Contact — Inkwell &amp; Spine Book Store</title>
-<meta name="description" content="Write to the booksellers, visit the shop, or place a bulk order." />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Inkwell &amp; Spine Book Store</title>
+  <meta name="description" content="Write to the booksellers, visit the shop, or place a bulk order." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
 
-<header class="nav">
-  <a href="./index.html" class="nav-logo"><img src="./images/logo-dark.webp" alt="Inkwell & Spine Logo" class="nav-logo-img" /></a>
-  <nav><ul class="nav-links">
-    <li><a href="./index.html">Home</a></li><li><a href="./about.html">About</a></li>
-    <li><a href="./services.html">Shop</a></li>
-    <li><a href="./books.html">Books</a></li><li><a href="./blog.html">Reading Room</a></li>
-    <li><a href="./contact.html" class="active">Contact</a></li>
-  </ul></nav>
-  <div class="nav-cta"><a href="./login.html" class="btn btn-primary">Login</a><button class="hamburger"><span></span><span></span><span></span></button></div>
-</header>
+  <header class="nav">
+    <a href="./index.html" class="nav-logo"><img src="./images/logo-dark.webp" alt="Inkwell & Spine Logo"
+        class="nav-logo-img" /></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Shop</a></li>
+        <li><a href="./books.html">Books</a></li>
+        <li><a href="./blog.html">Reading Room</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta"><a href="./login.html" class="btn btn-primary">Login</a><button
+        class="hamburger"><span></span><span></span><span></span></button></div>
+  </header>
 
-<section class="page-hero has-video">
-  <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="./images/office.webp">
-    <source src="https://assets.mixkit.co/videos/41498/41498-720.mp4" type="video/mp4" />
-  </video>
-  <div class="bg-video-overlay"></div>
-  <div class="reveal">
-    <div class="crumb">Get in Touch</div>
-    <h1>Write to us. We<br/>still read every letter.</h1>
-    <p>Book recommendations, special orders, press requests — we'd love to hear from you.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner contact-grid">
-    <div class="contact-info reveal">
-      <div class="contact-card"><div class="icon">✉</div><div><h3>Booksellers</h3><p>hello@inkwellspine.com<br/>For recommendations &amp; special orders</p></div></div>
-      <div class="contact-card"><div class="icon">☏</div><div><h3>Shop</h3><p>+32 3 555 0123<br/>Tuesday – Sunday, 10:00 – 19:00 CET</p></div></div>
-      <div class="contact-card"><div class="icon">⌂</div><div><h3>Address</h3><p>Inkwell &amp; Spine Book Store<br/>Vlaamse Kaai 12, 2000 Antwerp, BE</p></div></div>
-      <div class="contact-card"><div class="icon">⌘</div><div><h3>Press</h3><p>press@inkwellspine.com<br/>Interview &amp; image requests</p></div></div>
+  <section class="page-hero has-video">
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="./images/office.webp">
+      <source src="https://assets.mixkit.co/videos/41498/41498-720.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-video-overlay"></div>
+    <div class="reveal">
+      <div class="crumb">Get in Touch</div>
+      <h1>Write to us. We<br />still read every letter.</h1>
+      <p>Book recommendations, special orders, press requests — we'd love to hear from you.</p>
     </div>
-    <form class="contact-form reveal" id="contact-page-form">
-      <div class="field"><label>Your name</label><input type="text" required/><span class="error-text"></span></div>
-      <div class="field"><label>Email</label><input type="email" required/><span class="error-text"></span></div>
-      <div class="field"><label>Subject</label><input type="text" required/><span class="error-text"></span></div>
-      <div class="field"><label>Message</label><textarea required></textarea><span class="error-text"></span></div>
-      <button type="submit" class="btn btn-primary" style="width:100%">Send message</button>
-    </form>
-  </div>
-</section>
+  </section>
 
-<section class="section" style="background:var(--ivory)">
-  <div class="section-inner reveal">
-    <div class="section-head"><div><span class="eyebrow">Visit</span><h2>Find the shop.</h2></div><p>A converted print shop on the south quay, two blocks from the river.</p></div>
-    <div class="map"><div class="map-pin">●</div></div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-inner">
-    <div class="section-head reveal"><div><span class="eyebrow">Common questions</span><h2>Frequently asked.</h2></div></div>
-    <div class="faq reveal-stagger">
-      <div class="faq-item"><div class="faq-q">Do you ship internationally?</div><div class="faq-a">Yes — tracked, insured delivery to every country we can reach. Most parcels arrive within 2–7 working days.</div></div>
-      <div class="faq-item"><div class="faq-q">Can I order a signed copy?</div><div class="faq-a">Signed editions are listed individually in the shop. If we have a signing scheduled for a title you want, write to us and we'll reserve a copy.</div></div>
-      <div class="faq-item"><div class="faq-q">Do you offer library &amp; institutional accounts?</div><div class="faq-a">We do — universities, libraries and design studios. Write to hello@inkwellspine.com for an account application.</div></div>
-      <div class="faq-item"><div class="faq-q">Can you source a rare or out-of-print book?</div><div class="faq-a">Often. Our rare books desk searches international stock weekly. Send the title, author and any edition details you have.</div></div>
-      <div class="faq-item"><div class="faq-q">What is your returns policy?</div><div class="faq-a">Unread books can be returned within 30 days for a full refund. We cover return postage within the EU.</div></div>
+  <section class="section">
+    <div class="section-inner contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-card">
+          <div class="icon">✉</div>
+          <div>
+            <h3>Booksellers</h3>
+            <p>hello@inkwellspine.com<br />For recommendations &amp; special orders</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon">☏</div>
+          <div>
+            <h3>Shop</h3>
+            <p>+32 3 555 0123<br />Tuesday – Sunday, 10:00 – 19:00 CET</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon">⌂</div>
+          <div>
+            <h3>Address</h3>
+            <p>Inkwell &amp; Spine Book Store<br />Vlaamse Kaai 12, 2000 Antwerp, BE</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon">⌘</div>
+          <div>
+            <h3>Press</h3>
+            <p>press@inkwellspine.com<br />Interview &amp; image requests</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contact-page-form">
+        <div class="field"><label>Your name</label><input type="text" required /><span class="error-text"></span></div>
+        <div class="field"><label>Email</label><input type="email" required /><span class="error-text"></span></div>
+        <div class="field"><label>Subject</label><input type="text" required /><span class="error-text"></span></div>
+        <div class="field"><label>Message</label><textarea required></textarea><span class="error-text"></span></div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Send message</button>
+      </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="newsletter">
-  <div class="newsletter-inner reveal">
-    <h2>Prefer to talk in person?</h2>
-    <p>Drop in any day except Monday. Coffee is always on.</p>
-    <a href="./about.html" class="btn btn-gold">Visit the shop</a>
-  </div>
-</section>
+  <section class="section" style="background:var(--ivory)">
+    <div class="section-inner reveal">
+      <div class="section-head">
+        <div><span class="eyebrow">Visit</span>
+          <h2>Find the shop.</h2>
+        </div>
+        <p>A converted print shop on the south quay, two blocks from the river.</p>
+      </div>
+      <div class="map">
+        <div class="map-pin">●</div>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer">
-  <div class="footer-grid">
-    <div class="footer-brand"><img src="./images/logo-dark.webp" alt="Inkwell & Spine" class="footer-logo"/><p>A premium book store selling hardback first editions, literary paperbacks and design monographs since 2013.</p><div class="social"><a href="#" data-social>𝕏</a><a href="#" data-social>◐</a><a href="#" data-social>f</a><a href="#" data-social>in</a></div></div>
-    <div><h4>Shop</h4><ul><li><a href="./services.html">Hardbacks</a></li><li><a href="./services.html">Paperbacks</a></li><li><a href="./services.html">Monographs</a></li><li><a href="./services.html">Signed Editions</a></li></ul></div>
-    <div><h4>Store</h4><ul><li><a href="./about.html">About</a></li><li><a href="./about.html">Booksellers</a></li><li><a href="./contact.html">Press</a></li><li><a href="./contact.html">Careers</a></li></ul></div>
-    <div><h4>Account</h4><ul><li><a href="./contact.html">Contact</a></li><li><a href="./login.html">Login</a></li><li><a href="./register.html">Register</a></li><li><a href="#">Returns</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><span>© 2026 Inkwell &amp; Spine Book Store.</span><span>Hand-wrapped &amp; shipped worldwide.</span></div>
-</footer>
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Common questions</span>
+          <h2>Frequently asked.</h2>
+        </div>
+      </div>
+      <div class="faq reveal-stagger">
+        <div class="faq-item">
+          <div class="faq-q">Do you ship internationally?</div>
+          <div class="faq-a">Yes — tracked, insured delivery to every country we can reach. Most parcels arrive within
+            2–7 working days.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I order a signed copy?</div>
+          <div class="faq-a">Signed editions are listed individually in the shop. If we have a signing scheduled for a
+            title you want, write to us and we'll reserve a copy.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you offer library &amp; institutional accounts?</div>
+          <div class="faq-a">We do — universities, libraries and design studios. Write to hello@inkwellspine.com for an
+            account application.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can you source a rare or out-of-print book?</div>
+          <div class="faq-a">Often. Our rare books desk searches international stock weekly. Send the title, author and
+            any edition details you have.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is your returns policy?</div>
+          <div class="faq-a">Unread books can be returned within 30 days for a full refund. We cover return postage
+            within the EU.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="./js/main.js"></script>
+  <section class="newsletter">
+    <div class="newsletter-inner reveal">
+      <h2>Prefer to talk in person?</h2>
+      <p>Drop in any day except Monday. Coffee is always on.</p>
+      <a href="404.html" class="btn btn-gold">Visit the shop</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="./images/logo-dark.webp" alt="Inkwell & Spine" class="footer-logo" />
+        <p>A premium book store selling hardback first editions, literary paperbacks and design monographs since 2013.
+        </p>
+        <div class="social"><a href="404.html" data-social>𝕏</a><a href="404.html" data-social>◐</a><a href="404.html" data-social>f</a><a
+            href="404.html" data-social>in</a></div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="404.html">Hardbacks</a></li>
+          <li><a href="404.html">Paperbacks</a></li>
+          <li><a href="404.html">Monographs</a></li>
+          <li><a href="404.html">Signed Editions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Store</h4>
+        <ul>
+          <li><a href="404.html">About</a></li>
+          <li><a href="404.html">Booksellers</a></li>
+          <li><a href="404.html">Press</a></li>
+          <li><a href="404.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Inkwell &amp; Spine Book Store.</span><span>Hand-wrapped &amp; shipped
+        worldwide.</span></div>
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
