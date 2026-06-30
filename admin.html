@@ -9,6 +9,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="./css/styles.css" />
+<style> .currency-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.currency-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  letter-spacing: 0px !important;
+}</style>
 </head>
 <body>
 <div class="dash">
@@ -22,7 +35,7 @@
       <div class="dash-side-hero">
         <div class="dash-side-hero-img" id="dash-side-bg" style="background-image:url('./images/admin-side.webp')"></div>
         <div class="dash-side-hero-overlay"></div>
-        <a href="./index.html" class="dash-side-hero-logo" aria-label="Home"><img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine" /></a>
+        <a href="./admin.html" class="dash-side-hero-logo" aria-label="Home"><img src="./images/logo-dark-company.webp" alt="Inkwell &amp; Spine" /></a>
       </div>
       <!-- <div class="dash-side-intro">
         <h3>Bookstore Management</h3>
@@ -38,6 +51,7 @@
         <li><a href="#section-reports" data-section="reports">⚑ Reports</a></li>
         <li><a href="#section-settings" data-section="settings">⚙ Settings</a></li>
         <li><a href="#section-profile" data-section="profile">👤 Profile</a></li>
+        <li><a href="#" role="menuitem" id="logout-top">⎋ Logout</a></li>
       </ul>
       <div class="dash-side-profile" id="dash-side-profile">
         <button type="button" class="dash-side-profile-trigger" id="dash-side-profile-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Profile menu">
@@ -49,11 +63,11 @@
           </div>
           <span class="dash-side-profile-caret" aria-hidden="true">▾</span>
         </button>
-        <div class="dash-side-profile-menu" role="menu">
+        <!-- <div class="dash-side-profile-menu" role="menu">
           <a href="./profile.html" role="menuitem">👤 Profile</a>
           <a href="./settings.html" role="menuitem">⚙ Settings</a>
           <a href="#" role="menuitem" id="logout-side">⎋ Logout</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </aside>
@@ -71,14 +85,14 @@
           <span class="dash-profile-caret" aria-hidden="true">▾</span>
         </button>
         <div class="dash-profile-menu" id="dash-profile-menu" role="menu">
-          <div class="dash-profile-menu-head">
+          <!-- <div class="dash-profile-menu-head">
             <strong id="dash-profile-menu-name">Admin User</strong>
             <span id="dash-profile-menu-email">admin@inkwellspine.com</span>
             <em id="dash-profile-menu-role">admin</em>
           </div>
           <a href="./profile.html" role="menuitem">👤 Profile</a>
           <a href="./settings.html" role="menuitem">⚙ Settings</a>
-          <a href="#" role="menuitem" id="logout-top">⎋ Logout</a>
+          <a href="#" role="menuitem" id="logout-top">⎋ Logout</a> -->
         </div>
       </div>
     </div>
@@ -133,7 +147,7 @@
       <div class="dash-panel">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
           <h2 style="margin-bottom:0">Book Inventory</h2>
-          <button class="btn btn-primary btn-sm">+ Add Book</button>
+          <button onclick="window.location.href='404.html'" class="btn btn-primary btn-sm">+ Add Book</button>
         </div>
         <div class="dash-table-wrap">
           <table class="dash-table">
@@ -141,11 +155,11 @@
               <tr><th>Title</th><th>Author</th><th>Category</th><th>Price</th><th>Stock</th><th>Action</th></tr>
             </thead>
             <tbody>
-              <tr><td>The Quiet Return of the Hardback</td><td>H. Marks</td><td>Fiction</td><td>£24</td><td>47</td><td><a href="#" class="ed-readmore">Edit</a></td></tr>
-              <tr><td>Notes on the Editing Desk</td><td>A. Petrov</td><td>Non-Fiction</td><td>£18</td><td>32</td><td><a href="#" class="ed-readmore">Edit</a></td></tr>
-              <tr><td>The Typewriter Comeback</td><td>D. Reyes</td><td>Design</td><td>£32</td><td>5</td><td><a href="#" class="ed-readmore">Edit</a></td></tr>
-              <tr><td>Twelve Books for a Slow Autumn</td><td>Various</td><td>Anthology</td><td>£15</td><td>28</td><td><a href="#" class="ed-readmore">Edit</a></td></tr>
-              <tr><td>Inside the Antwerp Press</td><td>H. Marks</td><td>Non-Fiction</td><td>£42</td><td>0</td><td><a href="#" class="ed-readmore">Edit</a></td></tr>
+              <tr><td>The Quiet Return of the Hardback</td><td>H. Marks</td><td>Fiction</td><td>£24</td><td>47</td><td><a href="404.html" class="ed-readmore">Edit</a></td></tr>
+              <tr><td>Notes on the Editing Desk</td><td>A. Petrov</td><td>Non-Fiction</td><td>£18</td><td>32</td><td><a href="404.html" class="ed-readmore">Edit</a></td></tr>
+              <tr><td>The Typewriter Comeback</td><td>D. Reyes</td><td>Design</td><td>£32</td><td>5</td><td><a href="404.html" class="ed-readmore">Edit</a></td></tr>
+              <tr><td>Twelve Books for a Slow Autumn</td><td>Various</td><td>Anthology</td><td>£15</td><td>28</td><td><a href="404.html" class="ed-readmore">Edit</a></td></tr>
+              <tr><td>Inside the Antwerp Press</td><td>H. Marks</td><td>Non-Fiction</td><td>£42</td><td>0</td><td><a href="404.html" class="ed-readmore">Edit</a></td></tr>
             </tbody>
           </table>
         </div>
@@ -178,7 +192,7 @@
       <div class="dash-panel">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
           <h2 style="margin-bottom:0">Categories</h2>
-          <button class="btn btn-primary btn-sm">+ Add Category</button>
+          <button onclick="window.location.href='404.html'" class="btn btn-primary btn-sm">+ Add Category</button>
         </div>
         <div class="dash-table-wrap">
           <table class="dash-table">
@@ -186,11 +200,11 @@
               <tr><th>Category</th><th>Books</th><th>Total Sales</th><th>Action</th></tr>
             </thead>
             <tbody>
-              <tr><td>Fiction</td><td>4,820</td><td>£124,500</td><td><a href="#" class="ed-readmore">Manage</a></td></tr>
-              <tr><td>Non-Fiction</td><td>3,450</td><td>£98,200</td><td><a href="#" class="ed-readmore">Manage</a></td></tr>
-              <tr><td>Design &amp; Art</td><td>2,180</td><td>£87,600</td><td><a href="#" class="ed-readmore">Manage</a></td></tr>
-              <tr><td>Children</td><td>1,950</td><td>£42,300</td><td><a href="#" class="ed-readmore">Manage</a></td></tr>
-              <tr><td>Rare &amp; Antiquarian</td><td>620</td><td>£156,000</td><td><a href="#" class="ed-readmore">Manage</a></td></tr>
+              <tr><td>Fiction</td><td>4,820</td><td>£124,500</td><td><a href="404.html" class="ed-readmore">Manage</a></td></tr>
+              <tr><td>Non-Fiction</td><td>3,450</td><td>£98,200</td><td><a href="404.html" class="ed-readmore">Manage</a></td></tr>
+              <tr><td>Design &amp; Art</td><td>2,180</td><td>£87,600</td><td><a href="404.html" class="ed-readmore">Manage</a></td></tr>
+              <tr><td>Children</td><td>1,950</td><td>£42,300</td><td><a href="404.html" class="ed-readmore">Manage</a></td></tr>
+              <tr><td>Rare &amp; Antiquarian</td><td>620</td><td>£156,000</td><td><a href="404.html" class="ed-readmore">Manage</a></td></tr>
             </tbody>
           </table>
         </div>
@@ -260,9 +274,9 @@
         <h2>Download Reports</h2>
         <p class="muted">Generate and download detailed reports for accounting and performance analysis.</p>
         <div style="display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1rem">
-          <button class="btn btn-outline btn-sm" onclick="alert('Report generated: sales-2026-q2.pdf')">📄 Sales Report (PDF)</button>
-          <button class="btn btn-outline btn-sm" onclick="alert('Report generated: inventory-2026-06.csv')">📊 Inventory (CSV)</button>
-          <button class="btn btn-outline btn-sm" onclick="alert('Report generated: customers-2026-06.csv')">👥 Customers (CSV)</button>
+          <button class="btn btn-outline btn-sm" onclick="window.location.href='404.html'">📄 Sales Report (PDF)</button>
+          <button class="btn btn-outline btn-sm" onclick="window.location.href='404.html'">📊 Inventory (CSV)</button>
+          <button class="btn btn-outline btn-sm" onclick="window.location.href='404.html'">👥 Customers (CSV)</button>
         </div>
       </div>
     </div>
@@ -273,23 +287,43 @@
         <div class="dash-panel">
           <h2>Store Settings</h2>
           <p class="muted">Manage your bookstore configuration.</p>
-          <form id="settings-form" style="margin-top:1.5rem">
+          <div id="settings-form" style="margin-top:1.5rem">
             <div class="field"><label>Store Name</label><input type="text" value="Inkwell &amp; Spine" /></div>
             <div class="field"><label>Store Email</label><input type="email" value="hello@inkwellspine.com" /></div>
-            <div class="field"><label>Currency</label>
+            <!-- <div class="field"><label>Currency</label>
               <select><option value="GBP" selected>GBP (£)</option><option value="EUR">EUR (€)</option><option value="USD">USD ($)</option></select>
-            </div>
+            </div> -->
+            <div class="field">
+  <label>Currency</label>
+
+  <div class="currency-options">
+    <label>
+      <input type="radio" name="currency" value="GBP" checked>
+      GBP (£)
+    </label>
+
+    <label>
+      <input type="radio" name="currency" value="EUR">
+      EUR (€)
+    </label>
+
+    <label>
+      <input type="radio" name="currency" value="USD">
+      USD ($)
+    </label>
+  </div>
+</div>
             <div class="field"><label>Shipping Rate</label><input type="text" value="Free UK, £12 International" /></div>
             <div class="field"><label>Notification Email</label><input type="email" value="orders@inkwellspine.com" /></div>
-            <button type="submit" class="btn btn-primary">Save Settings</button>
-          </form>
+            <button onclick="window.location.href='404.html'" class="btn btn-primary">Save Settings</button>
+          </div>
         </div>
         <div class="dash-panel">
           <h2>Security</h2>
           <div style="display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1rem">
-            <button class="btn btn-outline btn-sm">Change Password</button>
-            <button class="btn btn-outline btn-sm">Two-Factor Auth</button>
-            <button class="btn btn-outline btn-sm">API Keys</button>
+            <button class="btn btn-outline btn-sm" onclick="window.location.href='404.html'">Change Password</button>
+            <button class="btn btn-outline btn-sm" onclick="window.location.href='404.html'">Two-Factor Auth</button>
+            <button class="btn btn-outline btn-sm" onclick="window.location.href='404.html'">API Keys</button>
           </div>
         </div>
       </div>
@@ -303,17 +337,17 @@
           <div class="profile-info">
             <h2 id="profile-name-display">Admin User</h2>
             <span id="profile-email-display">admin@inkwellspine.com</span>
-            <em id="profile-role-display">admin</em>
+            <!-- <em id="profile-role-display">admin</em> -->
           </div>
         </div>
         <div class="dash-panel">
           <h2>Edit Profile</h2>
-          <form id="profile-form" style="margin-top:1rem">
+          <div id="profile-form" style="margin-top:1rem">
             <div class="field"><label>Full Name</label><input type="text" id="profile-name-input" value="Admin User" required /></div>
             <div class="field"><label>Email</label><input type="email" id="profile-email-input" value="admin@inkwellspine.com" required /></div>
             <div class="field"><label>Bio</label><textarea>Bookstore manager at Inkwell &amp; Spine. Passionate about rare editions and connecting readers with the perfect book.</textarea></div>
-            <button type="submit" class="btn btn-primary">Update Profile</button>
-          </form>
+            <button onclick="window.location.href='404.html'" class="btn btn-primary">Update Profile</button>
+          </div>
         </div>
       </div>
     </div>

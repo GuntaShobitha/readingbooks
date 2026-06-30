@@ -2780,7 +2780,7 @@ body.no-scroll {
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; }
 
-  .auth-main { padding: 1rem 1rem 1.5rem; }
+  .auth-main { padding: 1rem 1rem 1.5rem; flex-direction: column; }
   .auth-form h1 { font-size: 1.8rem; }
   .back-home { font-size: 0.65rem; letter-spacing: 0.14em; }
   .auth-top img { height: 22px; }
