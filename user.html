@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Dashboard — Inkwell &amp; Spine</title>
+<meta name="description" content="Your personal reading dashboard at Inkwell &amp; Spine." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+<div class="dash">
+  <div class="dash-side-backdrop" id="dash-backdrop"></div>
+  <aside class="dash-side" id="dash-side">
+    <button type="button" class="dash-side-close" id="dash-side-close" aria-label="Close sidebar menu">✕ Close</button>
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="./images/library.webp">
+      <source src="https://assets.mixkit.co/videos/45770/45770-720.mp4" type="video/mp4" />
+    </video>
+    <div class="dash-side-inner">
+      <!-- <div class="dash-side-hero">
+        <div class="dash-side-hero-img" id="dash-side-bg" style="background-image:url('./images/customer-side.webp')"></div>
+        <div class="dash-side-hero-overlay"></div>
+        <a href="./index.html" class="dash-side-hero-logo" aria-label="Home"><img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine" /></a>
+      </div> -->
+      <!-- <div class="dash-side-intro">
+        <h3>Your Reading Journey</h3>
+        <p>Discover new books, track your reading progress, manage orders and wishlist, save favourites, browse personalised recommendations and revisit your recent purchases.</p>
+      </div> -->
+      <ul class="dash-nav" id="dash-nav" role="navigation" aria-label="Dashboard navigation">
+        <li><a href="#section-dashboard" class="active" data-section="dashboard">◐ Dashboard</a></li>
+        <li><a href="#section-my-books" data-section="my-books">📖 My Books</a></li>
+        <li><a href="#section-borrowed" data-section="borrowed">📚 Borrowed Books</a></li>
+        <li><a href="#section-wishlist" data-section="wishlist">♡ Wishlist</a></li>
+        <li><a href="#section-history" data-section="history">📜 History</a></li>
+        <li><a href="#section-profile" data-section="profile">👤 Profile</a></li>
+        <li><a href="#section-settings" data-section="settings">⚙ Settings</a></li>
+      </ul>
+      <div class="dash-side-profile" id="dash-side-profile">
+        <button type="button" class="dash-side-profile-trigger" id="dash-side-profile-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Profile menu">
+          <img src="./images/author1.webp" alt="" class="dash-side-profile-avatar" id="dash-side-profile-avatar" />
+          <div class="dash-side-profile-meta">
+            <strong id="dash-side-profile-name">Helena Marks</strong>
+            <span id="dash-side-profile-email">helena@example.com</span>
+            <em id="dash-side-profile-role">user</em>
+          </div>
+          <span class="dash-side-profile-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dash-side-profile-menu" role="menu">
+          <a href="./profile.html" role="menuitem">👤 Profile</a>
+          <a href="./settings.html" role="menuitem">⚙ Settings</a>
+          <a href="#" role="menuitem" id="logout-side">⎋ Logout</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <button class="mobile-toggle btn" id="mobile-toggle" aria-label="Open sidebar menu">☰ Menu</button>
+      <h1 id="dash-title">My Reading Library</h1>
+      <div class="dash-profile" id="dash-profile">
+        <button type="button" class="dash-profile-trigger" id="dash-profile-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Profile menu">
+          <img src="./images/author1.webp" alt="" class="dash-profile-avatar" id="dash-profile-avatar" />
+          <div class="dash-profile-meta">
+            <strong id="dash-profile-name">Helena Marks</strong>
+            <span id="dash-profile-email">helena@example.com</span>
+          </div>
+          <span class="dash-profile-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dash-profile-menu" id="dash-profile-menu" role="menu">
+          <div class="dash-profile-menu-head">
+            <strong id="dash-profile-menu-name">Helena Marks</strong>
+            <span id="dash-profile-menu-email">helena@example.com</span>
+            <em id="dash-profile-menu-role">user</em>
+          </div>
+          <a href="./profile.html" role="menuitem">👤 Profile</a>
+          <a href="./settings.html" role="menuitem">⚙ Settings</a>
+          <a href="#" role="menuitem" id="logout-top">⎋ Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="section-dashboard" class="dash-section">
+      <div class="dash-cards">
+        <div class="dash-card"><div class="lbl">Books owned</div><strong>34</strong><div class="delta">+3 this month</div></div>
+        <div class="dash-card"><div class="lbl">Wishlist</div><strong>17</strong><div class="delta">+5 this week</div></div>
+        <div class="dash-card"><div class="lbl">Hours of reading</div><strong>62</strong><div class="delta">+8 this month</div></div>
+        <div class="dash-card"><div class="lbl">Days a Patron</div><strong>412</strong><div class="delta">Patron tier</div></div>
+      </div>
+
+      <div class="dash-panel">
+        <h2>Continue reading</h2>
+        <div class="dash-table-wrap">
+          <table class="dash-table">
+            <thead>
+              <tr><th>Title</th><th>Author</th><th>Status</th><th>Progress</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>The Quiet Return of the Hardback</td><td>H. Marks</td><td><span class="pill">Reading</span></td><td>62%</td></tr>
+              <tr><td>Notes on the Editing Desk</td><td>A. Petrov</td><td><span class="pill">Reading</span></td><td>35%</td></tr>
+              <tr><td>The Typewriter Comeback</td><td>D. Reyes</td><td><span class="pill draft">In post</span></td><td>—</td></tr>
+              <tr><td>Twelve Books for a Slow Autumn</td><td>Various</td><td><span class="pill">Owned</span></td><td>—</td></tr>
+              <tr><td>Inside the Antwerp Press</td><td>H. Marks</td><td><span class="pill draft">Pre-order</span></td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dash-panel">
+        <h2>Recommended for you</h2>
+        <p class="muted">Curated picks from our editors, based on what you've been reading.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:1.2rem">
+          <div class="ed-card"><div class="ed-card-img"><img src="./images/blog1.webp" alt="Book cover" loading="lazy"/></div><div class="ed-card-body"><h3 style="font-size:1rem">Winter Stories</h3><p style="font-size:0.82rem;color:var(--muted)">A collection of short fiction</p></div></div>
+          <div class="ed-card"><div class="ed-card-img"><img src="./images/blog2.webp" alt="Book cover" loading="lazy"/></div><div class="ed-card-body"><h3 style="font-size:1rem">The Reading Life</h3><p style="font-size:0.82rem;color:var(--muted)">Essays on slow reading</p></div></div>
+          <div class="ed-card"><div class="ed-card-img"><img src="./images/blog3.webp" alt="Book cover" loading="lazy"/></div><div class="ed-card-body"><h3 style="font-size:1rem">Paper &amp; Ink</h3><p style="font-size:0.82rem;color:var(--muted)">A history of bookmaking</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Books Section -->
+    <div id="section-my-books" class="dash-section" style="display:none">
+      <div class="dash-cards" style="margin-bottom:1.5rem">
+        <div class="dash-card"><div class="lbl">Total books</div><strong>34</strong></div>
+        <div class="dash-card"><div class="lbl">Currently reading</div><strong>2</strong></div>
+        <div class="dash-card"><div class="lbl">Finished this year</div><strong>12</strong></div>
+        <div class="dash-card"><div class="lbl">Favourite genre</div><strong>Fiction</strong></div>
+      </div>
+      <div class="dash-panel">
+        <h2>My Collection</h2>
+        <div class="dash-table-wrap">
+          <table class="dash-table">
+            <thead><tr><th>Title</th><th>Author</th><th>Genre</th><th>Status</th><th>Rating</th></tr></thead>
+            <tbody>
+              <tr><td>The Quiet Return</td><td>H. Marks</td><td>Fiction</td><td><span class="pill">Reading</span></td><td>★★★★☆</td></tr>
+              <tr><td>Notes on the Desk</td><td>A. Petrov</td><td>Non-Fiction</td><td><span class="pill">Reading</span></td><td>★★★★★</td></tr>
+              <tr><td>Twelve Books Autumn</td><td>Various</td><td>Anthology</td><td><span class="pill">Owned</span></td><td>★★★☆☆</td></tr>
+              <tr><td>Inside Antwerp Press</td><td>H. Marks</td><td>Non-Fiction</td><td><span class="pill draft">Pre-order</span></td><td>—</td></tr>
+              <tr><td>Five Novels Winter</td><td>Various</td><td>Fiction</td><td><span class="pill">Finished</span></td><td>★★★★★</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Borrowed Books Section -->
+    <div id="section-borrowed" class="dash-section" style="display:none">
+      <div class="dash-panel">
+        <h2>Borrowed Books</h2>
+        <div class="dash-table-wrap">
+          <table class="dash-table">
+            <thead><tr><th>Title</th><th>Author</th><th>Borrowed</th><th>Due</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>The Quiet Return</td><td>H. Marks</td><td>25 Mar 2026</td><td>8 Apr 2026</td><td><span class="pill">Active</span></td></tr>
+              <tr><td>Typewriter Comeback</td><td>D. Reyes</td><td>28 Mar 2026</td><td>11 Apr 2026</td><td><span class="pill">Active</span></td></tr>
+              <tr><td>Design Monographs Vol. 2</td><td>Various</td><td>15 Mar 2026</td><td><span class="pill warning">Overdue</span></td><td><span class="pill warning">Overdue</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wishlist Section -->
+    <div id="section-wishlist" class="dash-section" style="display:none">
+      <div class="dash-panel">
+        <h2>My Wishlist</h2>
+        <p class="muted">Books you've saved for later.</p>
+        <div class="dash-table-wrap" style="margin-top:1rem">
+          <table class="dash-table">
+            <thead><tr><th>Title</th><th>Author</th><th>Price</th><th>Available</th></tr></thead>
+            <tbody>
+              <tr><td>The Art of Slow Reading</td><td>M. Foucault</td><td>£24</td><td><span class="pill">In stock</span></td></tr>
+              <tr><td>Bookbinding: A History</td><td>S. Lawrence</td><td>£42</td><td><span class="pill">In stock</span></td></tr>
+              <tr><td>Typography of the Page</td><td>E. Ruder</td><td>£36</td><td><span class="pill draft">Out of stock</span></td></tr>
+              <tr><td>Signed: The Quiet Return</td><td>H. Marks</td><td>£48</td><td><span class="pill">In stock</span></td></tr>
+              <tr><td>Reading Rooms of Europe</td><td>P. Zumthor</td><td>£55</td><td><span class="pill draft">Pre-order</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- History Section -->
+    <div id="section-history" class="dash-section" style="display:none">
+      <div class="dash-panel">
+        <h2>Reading History</h2>
+        <div class="dash-table-wrap">
+          <table class="dash-table">
+            <thead><tr><th>Title</th><th>Author</th><th>Started</th><th>Finished</th><th>Rating</th></tr></thead>
+            <tbody>
+              <tr><td>Five Hardbacks for Winter</td><td>Various</td><td>10 Jan 2026</td><td>28 Jan 2026</td><td>★★★★★</td></tr>
+              <tr><td>A Quiet Voice in Fiction</td><td>A. Petrov</td><td>5 Feb 2026</td><td>20 Feb 2026</td><td>★★★★☆</td></tr>
+              <tr><td>Design Monographs Vol. 1</td><td>D. Reyes</td><td>1 Mar 2026</td><td>15 Mar 2026</td><td>★★★★★</td></tr>
+              <tr><td>The Craft of Writing</td><td>Various</td><td>20 Dec 2025</td><td>8 Jan 2026</td><td>★★★☆☆</td></tr>
+              <tr><td>Books That Built Us</td><td>H. Marks</td><td>15 Nov 2025</td><td>28 Dec 2025</td><td>★★★★☆</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div id="section-profile" class="dash-section" style="display:none">
+      <div class="profile-shell">
+        <div class="profile-header">
+          <img src="./images/author1.webp" alt="User profile" class="profile-avatar-lg" id="profile-avatar-lg" />
+          <div class="profile-info">
+            <h2 id="profile-name-display">Helena Marks</h2>
+            <span id="profile-email-display">helena@example.com</span>
+            <em id="profile-role-display">reader</em>
+          </div>
+        </div>
+        <div class="dash-panel">
+          <h2>Edit Profile</h2>
+          <form id="profile-form" style="margin-top:1rem">
+            <div class="field"><label>Full Name</label><input type="text" id="profile-name-input" value="Helena Marks" required /></div>
+            <div class="field"><label>Email</label><input type="email" id="profile-email-input" value="helena@example.com" required /></div>
+            <div class="field"><label>Bio</label><textarea>Architect, reader, and Inkwell &amp; Spine Patron. I love finding rare editions and connecting with other readers.</textarea></div>
+            <button type="submit" class="btn btn-primary">Update Profile</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Section -->
+    <div id="section-settings" class="dash-section" style="display:none">
+      <div class="settings-shell">
+        <div class="dash-panel">
+          <h2>Account Settings</h2>
+          <form id="settings-form" style="margin-top:1.5rem">
+            <div class="field"><label>Display Name</label><input type="text" value="Helena Marks" /></div>
+            <div class="field"><label>Email Notifications</label>
+              <select><option value="all" selected>All notifications</option><option value="orders">Orders only</option><option value="none">None</option></select>
+            </div>
+            <div class="field"><label>Reading Preferences</label>
+              <select><option value="fiction" selected>Fiction</option><option value="non-fiction">Non-Fiction</option><option value="design">Design &amp; Art</option><option value="all">All genres</option></select>
+            </div>
+            <div class="field"><label>Newsletter</label>
+              <select><option value="weekly" selected>Weekly (Sunday)</option><option value="monthly">Monthly</option><option value="none">Unsubscribe</option></select>
+            </div>
+            <button type="submit" class="btn btn-primary">Save Preferences</button>
+          </form>
+        </div>
+        <div class="dash-panel">
+          <h2>Security</h2>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1rem">
+            <button class="btn btn-outline btn-sm">Change Password</button>
+            <button class="btn btn-outline btn-sm" onclick="alert('You have been logged out of all devices.')">Logout All Devices</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="./js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Redirecting — Inkwell &amp; Spine</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+<section class="err">
+  <div class="err-content" style="animation:fadeUp 0.8s var(--ease)">
+    <a href="./index.html"><img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine" style="height:32px;margin-bottom:2rem" /></a>
+    <h2>Taking you to your dashboard...</h2>
+    <p style="margin:1rem auto 2rem">Please wait while we redirect you.</p>
+    <div class="err-dots"><i></i><i></i><i></i></div>
+  </div>
+</section>
+<script>
+  (function() {
+    var role = localStorage.getItem('inkwell_role') || 'user';
+    var target = role === 'admin' ? './admin.html' : './user.html';
+    setTimeout(function() { window.location.href = target; }, 800);
+  })();
+</script>
+</body>
+</html>

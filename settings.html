@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Settings — Inkwell &amp; Spine</title>
+<meta name="description" content="Manage your Inkwell &amp; Spine account settings." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <a href="./index.html" class="nav-logo"><img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine Logo" class="nav-logo-img" /></a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Shop</a></li>
+      <li><a href="./blog.html">Reading Room</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-cta">
+    <a href="./login.html" class="btn btn-primary">Account</a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="reveal">
+    <div class="crumb">Account · Settings</div>
+    <h1>Your settings.</h1>
+    <p>Customise your reading experience and manage your account preferences.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner settings-shell">
+    <div class="dash-panel reveal">
+      <h2>Account Settings</h2>
+      <form id="settings-form" style="margin-top:1.5rem;max-width:600px">
+        <div class="field">
+          <label for="set-display-name">Display Name</label>
+          <input type="text" id="set-display-name" value="Helena Marks" />
+        </div>
+        <div class="field">
+          <label for="set-notifications">Email Notifications</label>
+          <select id="set-notifications">
+            <option value="all" selected>All notifications</option>
+            <option value="orders">Orders only</option>
+            <option value="reading">Reading recommendations</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="set-preferences">Reading Preferences</label>
+          <select id="set-preferences">
+            <option value="fiction" selected>Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="design">Design &amp; Art</option>
+            <option value="all">All genres</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="set-newsletter">Newsletter Frequency</label>
+          <select id="set-newsletter">
+            <option value="weekly" selected>Weekly (Sunday)</option>
+            <option value="biweekly">Bi-weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="none">Unsubscribe</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Preferences</button>
+      </form>
+    </div>
+
+    <div class="dash-panel reveal">
+      <h2>Security</h2>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1rem">
+        <button class="btn btn-outline" onclick="alert('A password reset link has been sent to your email.')">🔑 Change Password</button>
+        <button class="btn btn-outline" onclick="alert('You have been logged out of all other devices.')">🛡 Logout All Devices</button>
+      </div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <h2>Preferences</h2>
+      <div style="margin-top:1rem">
+        <label style="display:flex;align-items:center;gap:0.8rem;cursor:pointer;padding:0.5rem 0">
+          <input type="checkbox" checked style="width:18px;height:18px;accent-color:var(--gold)" />
+          <span style="color:var(--navy);font-weight:500">Send me personalised book recommendations</span>
+        </label>
+        <label style="display:flex;align-items:center;gap:0.8rem;cursor:pointer;padding:0.5rem 0">
+          <input type="checkbox" checked style="width:18px;height:18px;accent-color:var(--gold)" />
+          <span style="color:var(--navy);font-weight:500">Notify me about signed edition pre-orders</span>
+        </label>
+        <label style="display:flex;align-items:center;gap:0.8rem;cursor:pointer;padding:0.5rem 0">
+          <input type="checkbox" style="width:18px;height:18px;accent-color:var(--gold)" />
+          <span style="color:var(--navy);font-weight:500">Include me in book club discussions</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine" class="footer-logo" />
+      <p>A premium book store selling hardback first editions, literary paperbacks and design monographs since 2013.</p>
+      <div class="social"><a href="#" data-social aria-label="Social media link">𝕏</a><a href="#" data-social aria-label="Social media link">◐</a><a href="#" data-social aria-label="Social media link">f</a><a href="#" data-social aria-label="Social media link">in</a></div>
+    </div>
+    <div><h4>Shop</h4><ul><li><a href="./services.html">Hardbacks</a></li><li><a href="./services.html">Paperbacks</a></li><li><a href="./services.html">Monographs</a></li><li><a href="./services.html">Signed Editions</a></li></ul></div>
+    <div><h4>Store</h4><ul><li><a href="./about.html">About</a></li><li><a href="./about.html">Booksellers</a></li><li><a href="./contact.html">Press</a></li><li><a href="./contact.html">Careers</a></li></ul></div>
+    <div><h4>Account</h4><ul><li><a href="./contact.html">Contact</a></li><li><a href="./login.html">Login</a></li><li><a href="./register.html">Register</a></li><li><a href="#">Returns</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Inkwell &amp; Spine Book Store.</span><span>Hand-wrapped &amp; shipped worldwide.</span></div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

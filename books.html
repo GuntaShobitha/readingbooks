@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Books — Inkwell &amp; Spine Book Store</title>
+<meta name="description" content="Browse our curated collection of hardback first editions, literary paperbacks and design monographs." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="./index.html" class="nav-logo"><img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine Logo" class="nav-logo-img" /></a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Shop</a></li>
+      <li><a href="./books.html" class="active">Books</a></li>
+      <li><a href="./blog.html">Reading Room</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-cta">
+    <a href="./login.html" class="btn btn-primary">Login</a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="reveal">
+    <div class="crumb">The Catalogue</div>
+    <h1>Browse our collection<br/>of curated books.</h1>
+    <p>Every title is read by a bookseller before it earns a place on our shelves — from signed hardbacks to quiet paperbacks and design monographs.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:3rem">
+  <div class="section-inner">
+    <div class="chips reveal" id="book-filters">
+      <span class="chip active" data-filter="all">All</span>
+      <span class="chip" data-filter="hardback">Hardbacks</span>
+      <span class="chip" data-filter="paperback">Paperbacks</span>
+      <span class="chip" data-filter="signed">Signed Editions</span>
+      <span class="chip" data-filter="monograph">Monographs</span>
+      <span class="chip" data-filter="rare">Rare Finds</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="section-inner">
+    <div class="books-grid reveal-stagger" id="books-grid">
+      <article class="book-card" data-category="hardback signed">
+        <div class="book-card-img"><img src="./images/blog1.webp" alt="The Quiet Return of the Hardback" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>The Quiet Return</h3>
+          <div class="author">H. Marks</div>
+          <div class="rating">★★★★★</div>
+          <div class="price">£24</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="paperback">
+        <div class="book-card-img"><img src="./images/blog2.webp" alt="Notes on the Editing Desk" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>Notes on the Desk</h3>
+          <div class="author">A. Petrov</div>
+          <div class="rating">★★★★☆</div>
+          <div class="price">£18</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="hardback signed rare">
+        <div class="book-card-img"><img src="./images/blog3.webp" alt="The Typewriter Comeback" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>The Typewriter Comeback</h3>
+          <div class="author">D. Reyes</div>
+          <div class="rating">★★★★★</div>
+          <div class="price">£32</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="paperback">
+        <div class="book-card-img"><img src="./images/library.webp" alt="Twelve Books for a Slow Autumn" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>Twelve for Autumn</h3>
+          <div class="author">Various</div>
+          <div class="rating">★★★☆☆</div>
+          <div class="price">£15</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="hardback signed">
+        <div class="book-card-img"><img src="./images/print.webp" alt="Inside the Antwerp Press" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>Inside Antwerp Press</h3>
+          <div class="author">H. Marks</div>
+          <div class="rating">★★★★☆</div>
+          <div class="price">£42</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="monograph">
+        <div class="book-card-img"><img src="./images/design.webp" alt="Design Monographs Vol. 3" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>Design Monographs V3</h3>
+          <div class="author">Various</div>
+          <div class="rating">★★★★★</div>
+          <div class="price">£55</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="signed rare">
+        <div class="book-card-img"><img src="./images/magazines.webp" alt="Signed First Edition Collection" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>Signed: First Editions</h3>
+          <div class="author">Various Authors</div>
+          <div class="rating">★★★★★</div>
+          <div class="price">£48</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="hardback">
+        <div class="book-card-img"><img src="./images/writer.webp" alt="A Quiet Voice in Fiction" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>A Quiet Voice</h3>
+          <div class="author">Various</div>
+          <div class="rating">★★★★☆</div>
+          <div class="price">£24</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+      <article class="book-card" data-category="monograph">
+        <div class="book-card-img"><img src="./images/digital.webp" alt="Typography of the Page" loading="lazy" /></div>
+        <div class="book-card-body">
+          <h3>Typography of the Page</h3>
+          <div class="author">E. Ruder</div>
+          <div class="rating">★★★★★</div>
+          <div class="price">£36</div>
+          <button class="btn btn-primary btn-sm" style="width:100%;margin-top:0.5rem">Add to basket</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="newsletter-inner reveal">
+    <span class="eyebrow" style="color:var(--gold-2)">Can't find what you're looking for?</span>
+    <h2>Let us source it for you.</h2>
+    <p>Our rare books desk searches international stock weekly. Send us the title and author.</p>
+    <a href="./contact.html" class="btn btn-gold">Request a book</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine" class="footer-logo" />
+      <p>A premium book store selling hardback first editions, literary paperbacks and design monographs since 2013.</p>
+      <div class="social"><a href="#" data-social aria-label="Social media link">𝕏</a><a href="#" data-social aria-label="Social media link">◐</a><a href="#" data-social aria-label="Social media link">f</a><a href="#" data-social aria-label="Social media link">in</a></div>
+    </div>
+    <div><h4>Shop</h4><ul><li><a href="./services.html">Hardbacks</a></li><li><a href="./services.html">Paperbacks</a></li><li><a href="./services.html">Monographs</a></li><li><a href="./services.html">Signed Editions</a></li></ul></div>
+    <div><h4>Store</h4><ul><li><a href="./about.html">About</a></li><li><a href="./about.html">Booksellers</a></li><li><a href="./contact.html">Press</a></li><li><a href="./contact.html">Careers</a></li></ul></div>
+    <div><h4>Account</h4><ul><li><a href="./contact.html">Contact</a></li><li><a href="./login.html">Login</a></li><li><a href="./register.html">Register</a></li><li><a href="#">Returns</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Inkwell &amp; Spine Book Store.</span><span>Hand-wrapped &amp; shipped worldwide.</span></div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

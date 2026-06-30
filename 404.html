@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>404 — Page not found · Inkwell &amp; Spine</title>
+<meta name="description" content="The page you're looking for has moved or doesn't exist." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+<section class="err" role="main">
+  <div class="err-content">
+    <a href="./index.html" aria-label="Go to home page"><img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine" style="height:32px;margin-bottom:2rem;margin-left:auto;margin-right:auto" /></a>
+    <div class="err-num" aria-hidden="true">404</div>
+    <h2>This page is out of print.</h2>
+    <p>The book you're looking for has either moved to a back catalogue, or never quite made it onto the shelf. Try heading home — our new arrivals are waiting.</p>
+    <div class="err-actions">
+      <a href="./index.html" class="btn btn-primary">← Back to Home</a>
+      <button onclick="history.back()" class="btn btn-outline">Go Back</button>
+    </div>
+  </div>
+  <div class="err-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+</section>
+<script>
+  // 404 redirect for any invalid links
+  document.querySelectorAll('a[href="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = './404.html';
+    });
+  });
+</script>
+</body>
+</html>

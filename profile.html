@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Profile — Inkwell &amp; Spine</title>
+<meta name="description" content="Manage your Inkwell &amp; Spine profile." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <a href="./index.html" class="nav-logo"><img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine Logo" class="nav-logo-img" /></a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Shop</a></li>
+      <li><a href="./blog.html">Reading Room</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./login.html" class="active">Account</a></li>
+    </ul>
+  </nav>
+  <div class="nav-cta">
+    <a href="./dashboard.html" class="btn btn-primary">Dashboard</a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="reveal">
+    <div class="crumb">Account · Profile</div>
+    <h1>Your profile.</h1>
+    <p>Manage your personal information and reading preferences.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner profile-shell">
+    <div class="profile-header reveal">
+      <img src="./images/author1.webp" alt="Your profile" class="profile-avatar-lg" id="page-profile-avatar" />
+      <div class="profile-info">
+        <h2 id="page-profile-name">Helena Marks</h2>
+        <span id="page-profile-email">helena@example.com</span>
+        <em id="page-profile-role">reader</em>
+      </div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <h2>Personal Information</h2>
+      <form id="profile-edit-form" style="margin-top:1.5rem;max-width:600px">
+        <div class="field">
+          <label for="edit-name">Full Name</label>
+          <input type="text" id="edit-name" value="Helena Marks" required />
+          <span class="error-text"></span>
+        </div>
+        <div class="field">
+          <label for="edit-email">Email</label>
+          <input type="email" id="edit-email" value="helena@example.com" required />
+          <span class="error-text"></span>
+        </div>
+        <div class="field">
+          <label for="edit-bio">Bio</label>
+          <textarea id="edit-bio">Architect, reader, and Inkwell &amp; Spine Patron. I love finding rare editions and connecting with other readers.</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </div>
+
+    <div class="dash-panel reveal">
+      <h2>Account Actions</h2>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1rem">
+        <a href="./settings.html" class="btn btn-outline">⚙ Settings</a>
+        <button class="btn btn-outline" onclick="alert('Password reset link sent to your email.')">🔑 Change Password</button>
+        <a href="#" class="btn btn-outline" id="page-logout-btn" style="color:#c0392b;border-color:#c0392b">⎋ Logout</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./images/logo-dark.webp" alt="Inkwell &amp; Spine" class="footer-logo" />
+      <p>A premium book store selling hardback first editions, literary paperbacks and design monographs since 2013.</p>
+      <div class="social"><a href="#" data-social aria-label="Social media link">𝕏</a><a href="#" data-social aria-label="Social media link">◐</a><a href="#" data-social aria-label="Social media link">f</a><a href="#" data-social aria-label="Social media link">in</a></div>
+    </div>
+    <div><h4>Shop</h4><ul><li><a href="./services.html">Hardbacks</a></li><li><a href="./services.html">Paperbacks</a></li><li><a href="./services.html">Monographs</a></li><li><a href="./services.html">Signed Editions</a></li></ul></div>
+    <div><h4>Store</h4><ul><li><a href="./about.html">About</a></li><li><a href="./about.html">Booksellers</a></li><li><a href="./contact.html">Press</a></li><li><a href="./contact.html">Careers</a></li></ul></div>
+    <div><h4>Account</h4><ul><li><a href="./contact.html">Contact</a></li><li><a href="./login.html">Login</a></li><li><a href="./register.html">Register</a></li><li><a href="#">Returns</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Inkwell &amp; Spine Book Store.</span><span>Hand-wrapped &amp; shipped worldwide.</span></div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
