@@ -202,8 +202,8 @@
     });
   }
 
-  wireDropdown('dash-profile', 'dash-profile-trigger');
-  wireDropdown('dash-side-profile', 'dash-side-profile-trigger');
+  // wireDropdown('dash-profile', 'dash-profile-trigger');
+  // wireDropdown('dash-side-profile', 'dash-side-profile-trigger');
 
   /* ----- Profile Form Submission ----- */
   var profileForm = $('profile-form');
